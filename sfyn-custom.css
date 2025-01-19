@@ -1,0 +1,2141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+:root {
+    --arrow-svg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    --circle-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23232424' d='M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z'/%3E%3C/svg%3E");
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "League Spartan", sans-serif;
+}
+body > div {
+    overflow: hidden !important;
+}
+h1, h2, h3, h4, h5, h5, p, ul, li, a, span {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 1.2;
+    color: #232424;
+    font-family: "League Spartan", sans-serif;
+    text-transform: capitalize;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+h2 {
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 1.2;
+    color: #232424;
+    font-family: "League Spartan", sans-serif;
+    text-transform: capitalize;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+h3 {
+    font-size: 20px;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 700;
+    color: #000;
+    line-height: 1.3;
+}
+p, span {
+    font-weight: 400;
+    font-size: 18px;
+    font-family: "League Spartan", sans-serif;
+    color: #5E5E5E;
+    line-height: 1.3;
+}
+a {
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+input {
+    width: 100%;
+    border-radius: 12px;
+    border: 0;
+    height: 50px;
+    padding: 10px 15px;
+    border: 1px solid #232424;
+}
+input:focus-visible {
+    border: 2px solid #232424;
+    outline: 0;
+}
+textarea {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #232424;
+    padding: 10px 15px;
+}
+input::placeholder, textarea::placeholder{
+    font-family: "League Spartan", sans-serif;
+    font-size: 16px;
+    line-height: normal;
+}
+.slick-dots li button:before {
+    display: none !important;
+}
+.slick-dots li button {
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 10px !important;
+    background-color: #242424 !important;
+    opacity: .2;
+    display: inline-block;
+    padding: 0;
+}
+.slick-dots li.slick-active button {
+    opacity: 1;
+}
+.slick-dots li {
+    margin: 0 10px 0 0 !important;
+    width: auto !important;
+}
+/* header css start */
+.sfyn-nav-header {
+    /*margin-top: 40px;*/
+    background: #f6a800;
+    padding: 6px 0;
+}
+.sfyn-nav-info-wrapper {
+    display: flex;
+    align-items: center;
+}
+.sfyn-nav-info-wrapper svg {
+    width: 15px;
+    height: 15px;
+    fill: #fff;
+}
+.sfyn-nav-info-wrapper svg path {
+    fill: #fff;
+}
+.sfyn-nav-info-wrapper li a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.sfyn-nav-info-wrapper li a span {
+    color: #fff;
+    font-size: 14px;
+    line-height: normal;
+}
+.sfyn-nav-info-wrapper li:not(:first-child):before {
+    content: "";
+    height: 13px;
+    width: 1px;
+    display: block;
+    background: #fff;
+    margin: 0 14px;
+}
+.sfyn-nav-info-wrapper li {
+    display: flex;
+    align-items: center;
+}
+.sfyn-nav-info-wrapper li a:hover span {
+    color: #000;
+}
+.sfyn-nav-info-wrapper li:hover path {
+    fill: #000;
+}
+.sfyn-nav-menu ul {
+    display: flex;
+    align-items: center;
+}
+.sfyn-nav-menu li:not(:first-child):before {
+    content: "";
+    height: 13px;
+    width: 1px;
+    display: block;
+    background: #fff;
+    margin: 0 14px;
+}
+.sfyn-nav-menu li {
+    display: flex;
+    align-items: center;
+}
+.sfyn-nav-menu ul li {
+    width: fit-content;
+    list-style: none;
+}
+.sfyn-nav-menu ul li a {
+    color: #fff;
+}
+.sfyn-nav-menu ul li a {
+    color: #fff;
+    font-size: 14px;
+}
+.sfyn-nav-menu ul li a:hover {
+    color: #000000;
+}
+.sfyn-nav-menu .menu-navigation-menu-container {
+    display: flex;
+    justify-content: end;
+}
+.sfyn-logo-col img {
+    max-width: 100px !important;
+}
+.sfyn-header-menu ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.sfyn-header-menu ul li a {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+}
+.sfyn-header-menu ul li a:hover {
+    color: #000;
+}
+.sfyn-main-header {
+    position: relative;
+}
+.sfyn-main-header:before {
+    content: "";
+    clip-path: polygon(100% 0%, 100% 100%, 75% 100%, 20% 100%, 25% 50%, 20% 0%);
+    background: #62A403;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.sfyn-main-header-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sfyn-logo-col {
+    width: 20%;
+}
+.sfyn-header-menu-col {
+    width: 60%;
+}
+.sfyn-header-menu ul#menu-header-menu {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    justify-content: center;
+    position: relative;
+}
+.sfyn-header-icon {
+    width: 20%;
+}
+.sfyn-icon-item svg {
+    width: 20px;
+    height: 20px;
+}
+.sfyn-icon-item {
+    width: 35px;
+    height: 35px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease-in-out;
+}
+.sfyn-icon-item.sfyn-wishlist a {
+    line-height: normal;
+    display: flex;
+}
+.sfyn-icon-item a, .sfyn-icon-item div#fkcart-mini-toggler {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.sfyn-icon-item:hover {
+    background: #f6a800;
+}
+.sfyn-header-icon-wrapper {
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+}
+.fkcart-shortcode-container .fkcart-shortcode-count {
+    min-width: 15px !important;
+    height: 15px !important;
+    top: -6px !important;
+    right: -5px !important;
+}
+div#fkcart-floating-toggler {
+    display: none !important;
+}
+.sfyn-main-header .sfyn-custom-container {
+    padding: 6px 15px;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    background: #fff;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    padding: 20px;
+    z-index: 99;
+    width: 100%;
+    max-width: 225px;
+    top: 25px;
+}
+
+.sub-menu li a {
+    color: #62a403 !important;
+    text-transform: capitalize !important;
+}
+
+.sub-menu li a:hover {
+    color: #000 !important;
+}
+
+.sub-menu li:not(:first-child) {
+    margin-top: 10px;
+}
+
+.menu-item-has-children:after {
+    content: "" !important;
+    background: var(--arrow-svg);
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    background-size: 20px;
+    filter: brightness(100);
+    display: inline-flex;
+}
+
+.menu-item-has-children:hover .sub-menu {
+    display: block;
+}
+
+
+/* sfyn mobile header css start */
+.hamburger {
+    padding: 15px 15px;
+    display: inline-block;
+    cursor: pointer;
+    transition-property: opacity, -webkit-filter;
+    transition-property: opacity, filter;
+    transition-property: opacity, filter, -webkit-filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible;
+}
+.hamburger:hover {
+    opacity: 0.7;
+}
+.hamburger-box {
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+}
+.hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: 2px;
+}
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 30px;
+    height: 3px;
+    background-color: #0A2C3D;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+}
+.hamburger-inner::before, .hamburger-inner::after {
+    content: "";
+    display: block;
+}
+.hamburger-inner::before {
+    top: -10px;
+}
+.hamburger-inner::after {
+    bottom: -10px;
+}
+.hamburger-spin .hamburger-inner {
+    transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.hamburger-spin .hamburger-inner::before {
+    transition: top 0.1s 0.34s ease-in, opacity 0.1s ease-in;
+}
+.hamburger-spin .hamburger-inner::after {
+    transition: bottom 0.1s 0.34s ease-in, -webkit-transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: bottom 0.1s 0.34s ease-in, transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: bottom 0.1s 0.34s ease-in, transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.hamburger-spin.is-active .hamburger-inner {
+    -webkit-transform: rotate(225deg);
+    transform: rotate(225deg);
+    transition-delay: 0.14s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.hamburger-spin.is-active .hamburger-inner::before {
+    top: 0;
+    opacity: 0;
+    transition: top 0.1s ease-out, opacity 0.1s 0.14s ease-out;
+}
+.hamburger-spin.is-active .hamburger-inner::after {
+    bottom: 0;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    transition: bottom 0.1s ease-out, -webkit-transform 0.3s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: bottom 0.1s ease-out, transform 0.3s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: bottom 0.1s ease-out, transform 0.3s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.3s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+aside {
+    background: #fff;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    max-width: 360px;
+    right: -100%;
+    transition: right 0.4s ease, width 0.5s cubic-bezier(0.525, -0.35, 0.115, 1.335);
+    z-index: 99999;
+}
+
+/*my burger*/
+#sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 80%;
+    height: 100%;
+    background: #fff;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%);
+    z-index: 9999;
+}
+
+#sidebar.sidebar-open {
+    transform: translateX(0);
+}
+
+#sidebar.sidebar-closed {
+    transform: translateX(-100%);
+}
+
+.hamburger {
+    cursor: pointer;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+.sfyn-close-sidebar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin-top: 55px;
+}
+
+.close-sidebar-button {
+    background: none;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+
+
+
+body.aside-open aside {
+    right: 0;
+    position: fixed;
+    top: 0;
+}
+body.aside-open section {
+    margin-left: 250px;
+}
+section {
+    padding: 20px;
+    transition: margin-left 0.4s ease;
+}
+.sidebar-inner {
+    height: 100%;
+    padding: 30px 20px 0;
+    margin-top: 20px;
+}
+.sfyn-mobile-header-content img {
+    width: 100%;
+    max-width: 100px;
+    margin: auto;
+}
+.sfyn-mobile-header-content .sfyn-header-menu {
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 20px;
+}
+.sfyn-mobile-header-content .sfyn-menu-wrapper {
+    margin-top: 30px;
+}
+.sfyn-mobile-header-footer {
+    background: #0a472e;
+    padding: 10px 0;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+}
+.sfyn-mobile-header-footer .sfyn-header-follow-us {
+    justify-content: center;
+}
+.sfyn-mobile-header .sfyn-header-logo {
+    width: 33.33%;
+}
+.sfyn-mobile-header .sfyn-header-btn-col {
+    width: 33.33%;
+    display: flex;
+    justify-content: end;
+}
+a.nav-item {
+    width: 33.33%;
+}
+.nav-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sfyn-mobile-header .sfyn-header-logo img {
+    max-width: 100px;
+    margin: auto;
+}
+.sfyn-mobile-header {
+    display: none;
+}
+.sfyn-mobile-header-content .sfyn-header-menu ul li a {
+    color: #000;
+}
+.sfyn-mobile-header-content .menu-item-has-children:after {
+    filter: inherit;
+}
+.sfyn-mobile-header-content .sfyn-header-menu {
+    margin-top: 20px;
+}
+.sfyn-mobile-header-content .sfyn-header-menu li {
+    padding: 18px 0;
+    border-bottom: 1px solid;
+}
+.sfyn-mobile-header-content .sfyn-header-menu li {
+    position: relative;
+}
+.sfyn-mobile-header-content .sfyn-header-menu li ul.sub-menu {
+    padding: 10px;
+}
+.sfyn-mobile-header-content .sfyn-header-menu li ul.sub-menu li {
+    padding: 6px 0px;
+}
+.sfyn-mobile-header-content .sfyn-header-menu li ul.sub-menu {
+    padding: 10px;
+    top: 44px;
+}
+.sfyn-main-header-grid.sfyn-mob-header {
+    display: none;
+}
+/* sfyn mobile header css end */
+/* header css end */
+/* sfyn-hero-slider css start */
+.sfyn-hero-slider ul.slick-dots {
+    bottom: 25px;
+}
+.sfyn-desk-banner {
+    display: block !important;
+}
+.sfyn-mob-banner {
+    display: none !important;
+}
+/* sfyn-hero-slider css end */
+/* sfyn-icon-wtih-text css start */
+.sfyn-icon-img {
+    width: 100%;
+    max-width: 75px;
+    min-width: 75px;
+    height: 75px;
+    object-fit: contain;
+}
+.sfyn-custom-container {
+    width: 90%;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: block;
+}
+.sfyn-gird-4fr {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.sfyn-icon-with-text-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #f1f3e8;
+    height: 84px;
+    border-radius: 0 50px 50px 0;
+}
+.sfyn-gap-20px {
+    gap: 30px;
+}
+
+.carousel-indicators{
+    display: none !important;
+}
+.sfyn-same-padding {
+    padding: 40px 0;
+}
+/* sfyn-icon-wtih-text css end */
+/* sfyn-healthier-together css start */
+.sfyn-grid-2fr {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+.sfyn-healthier-benefits {
+    display: flex;
+    align-items: center;
+}
+.sfyn-same-btn {
+    background: #62A403;
+    border-radius: 0px 50px 50px 0px;
+    padding: 16px 25px 16px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid #62a403;
+    width: fit-content;
+    transition: 0.2s ease-in-out;
+}
+.sfyn-same-btn:hover {
+    color: #000000;
+    background-color: #E7EFD3;
+    border-color: #E7EFD3;
+}
+.sfyn-btn-arrow svg {
+    width: 12px;
+    height: 12px;
+    fill: #fff;
+    transition: 0.2s ease-in-out;
+}
+.sfyn-same-btn:hover .sfyn-btn-arrow svg {
+    fill: #000;
+}
+.sfyn-btn-arrow {
+    background: #457500;
+    border-radius: 50%;
+    padding: 5px;
+    min-width: 22px;
+    max-width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+}
+.sfyn-mt-24px {
+    margin-top: 24px;
+}
+.sfyn-gap-10px {
+    gap: 10px;
+}
+.sfyn-gird-row-1fr {
+    display: grid;
+}
+/* sfyn-healthier-together css end */
+/* sfyn-organic-gems css start */
+.sfyn-change-bg {
+    background: #171717;
+    margin-top: 40px;
+}
+.sfyn-white-text, .sfyn-white-text p {
+    color: #fff;
+}
+.sfyn-img-w-auto img {
+    width: auto;
+}
+.sfyn-flex-2fr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sfyn-gems-media-col, .sfyn-gems-content-col {
+    width: 50%;
+}
+.slick-arrow:before {
+    content: "" !important;
+    background: var(--arrow-svg);
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-size: 20px;
+    transform: rotate(-90deg);
+    filter: brightness(0);
+    transition: transform 0.3s ease-in-out;
+}
+.slick-arrow {
+    width: 34px !important;
+    height: 34px !important;
+    background: #fff !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    transition: 0.2s ease-in-out;
+    z-index: 1;
+}
+.slick-arrow:hover {
+    background: #62A403 !important;
+}
+.slick-prev.slick-arrow:before {
+    transform: rotate(90deg);
+}
+.slick-prev.slick-arrow {
+    left: -40px;
+}
+.slick-next.slick-arrow {
+    right: -40px;
+}
+/* sfyn-organic-gems css end */
+/* sfyn-choose-organic css start */
+.sfyn-choose-organic.sfyn-change-bg {
+    background: #fbf3e8;
+}
+.sfyn-text-align-center {
+    text-align: center;
+}
+.sfyn-left-benefits .sfyn-healthier-benefits {
+    flex-direction: row-reverse;
+}
+.sfyn-grid-3fr {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+.sfyn-grid-4fr {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+}
+.sfyn-left-benefits .sfyn-icon-content h3 {
+    text-align: right;
+}
+.sfyn-btn-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+.sfyn-choose-benefits {
+    display: grid;
+}
+.sfyn-left-benefits .sfyn-healthier-benefits:last-child {
+    margin-right: 18px;
+}
+.sfyn-right-benefits .sfyn-healthier-benefits:last-child {
+    margin-left: 18px;
+}
+.sfyn-choose-organic.sfyn-change-bg {
+    margin-top: 0;
+}
+/* sfyn-choose-organic css end */
+/* sfyn-prd-layout start */
+.sfyn-prd-cards .wpte-general-layout-row .wpte-general-layout-category-area a, .sfyn-prd-cards .wpte-general-layout-row .wpte-general-layout-title-area h2.wpte-general-layout-product-title, .sfyn-prd-cards .wpte-general-layout-row .wpte-general-layout-price-area {
+    font-family: "League Spartan", sans-serif;
+}
+/* sfyn-prd-layout end */
+/* sfyn-trust-badges css start */
+.sfyn-badge-img-wrapper {
+    width: 100%;
+    max-width: 215px;
+    min-width: 215px;
+    background: #dfdfdf;
+    border-radius: 20px;
+    padding: 20px;
+    margin: auto;
+}
+.sfyn-mt-10 {
+    margin-top: 10px;
+}
+/* sfyn-trust-badges css end */
+/* sfyn-dotw css start */
+.sfyn-dotw-grid {
+    display: grid;
+    grid-template-columns: 25%1fr;
+}
+.sfyn-dotw-grid {
+    display: grid;
+    grid-template-columns: 25%1fr;
+    align-items: stretch;
+}
+.sfyn-deal-ingo-block {
+    background-color: #F5F5F5;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sfyn-deal-ingo-block h2 {
+    font-size: 26px;
+    max-width: 200px;
+    margin: 10px auto 0;
+}
+.sfyn-dotw-prd .wpte-product-load .wpte-product-column .wpte-general-layout-row:nth-last-child(-n+2) {
+    display: none;
+}
+.sfyn-dotw-prd .wpte-product-load .wpte-product-column {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.sfyn-prd-cards .wpte-product-load h2.wpte-general-layout-product-title {
+    padding-top: 0;
+}
+.sfyn-prd-cards .wpte-product-load h2.wpte-general-layout-product-title a {
+    padding: 0;
+}
+.sfyn-prd-cards .wpte-product-load .wpte-general-layout-rating-area {
+    padding: 0;
+}
+/* sfyn-dotw css end */
+/* sfyn-frienly-store css start */
+.sfyn-frienly-store .sfyn-content-col, .sfyn-frienly-store .sfyn-media-col {
+    width: 100%;
+    
+}
+/* my css */
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-item {
+    display: none; /* Hide all items by default */
+    flex: 1 0 100%; /* Take full width */
+}
+
+/*.carousel-item.active {*/
+/*    display: flex;*/
+/*}*/
+
+.carousel-item .col-6 {
+    flex: 1;
+    max-width: 50%;
+}
+
+
+/*.sfyn-friendly-slider{*/
+/*    width: 150px !important;*/
+/*    height: 150px !important;*/
+/*    padding: 0 15px;*/
+/*}*/
+
+/*product  slider border style*/
+.wcps-container-442 .slick-slide {
+    padding: 0px !important;
+}
+.wcps-container-442 .item {
+    border: 1px solid #62a403 !important;
+    border-radius: 10px !important;
+    padding: 6px !important;
+    box-shadow: 0px 0px 5px 3px rgba(115, 110, 110, 0.17);
+}
+.wcps-container-442 .item:hover {
+    border: 1px solid red !important;
+    border-radius: 10px !important;
+    padding: 6px !important;
+    box-shadow: 0px 0px 5px 3px rgba(115, 110, 110, 0.17);
+}
+.wcps-container-442 .controlsWrap.topright {
+    display: flex;
+    justify-content: space-between;
+    border: none !important;
+    position: absolute;
+    margin-top: 180px;
+    width: 100%;
+}
+.cr-review-card:hover {
+    border: none !important;
+    border-radius: none !important;
+    box-shadow: none !important;
+}
+
+.layout-441 .element-1714234018810 a{
+    margin-top: 10px !important;
+    text-align: center !important;
+    color: #232424 !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    font-family: 'DM Serif Text' !important;
+}
+.layout-441 .element-1714234020132 {
+    text-align: center !important;
+}
+.layout-441 .element-1714234020132 a{
+    color: #232424 !important;
+}
+.layout-441 .element-1721624591317 {
+    text-align: center !important;
+}
+.layout-441 .element-1721624591317 span{
+    color: #62a403 !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+}
+
+.draggable {
+    padding: 10px 0px !important;
+}
+.wcps-items-thumb:hover {
+    background-color: #62a403 !important;
+}
+
+/* sfyn-frienly-store css end */
+/*as seen on*/
+.as-seen-on {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.as-seen-on h3 {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+    color: #232424;
+    font-family: "League Spartan", sans-serif;
+}
+.aso-child {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.aso-left {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.aso-left h2 {
+    font-size: 35px;
+    font-weight: 600;
+    color: #ff33e6;
+    font-family: "League Spartan", sans-serif;
+    line-height: 1.2;
+    margin: 0px;
+}
+.aso-left p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #232424;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5;
+}
+.aso-right{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.aso-right-child {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.aso-right-child img {
+    width: 75px;
+    height: 75px;
+}
+
+/*reviews*/
+.cr-reviews-slider .cr-review-card .crstar-rating span {
+    display: none !important;
+}
+/* footer css start */
+.sfyn-subscribe-conatiner {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1100px;
+}
+.sfyn-subscribe-grid {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    line-height: unset;
+    align-items: stretch;
+}
+.sfyn-footer-form {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 60px 24px;
+}
+.sfyn-subscribe-content-inner {
+    padding: 45px 40px;
+}
+.sfyn-subscribe-content-inner h2 {
+    font-size: 36px;
+}
+.sfyn-subscribe-content {
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px 0 0 12px;
+}
+.sfyn-footer-form-inner {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+}
+.sfyn-footer-form-inner input {
+    border: 0;
+}
+.wpcf7-form-control.wpcf7-submit {
+    background: #62A403;
+    padding: 16px 25px 16px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid #62a403;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    margin-top: 14px;
+}
+.wpcf7-form-control.wpcf7-submit:hover {
+    background: transparent;
+    color: #62A403;
+}
+.sfyn-footer-form-inner span.wpcf7-spinner {
+    width: 0;
+    height: 0;
+}
+.sfn-footer-inner {
+    background: #181818;
+    margin-top: 160px;
+}
+.sfyn-main-footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.sfyn-contact-icon-wrapper img {
+    width: 55px;
+    height: 55px;
+}
+.sfyn-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.sfyn-contact-body a {
+    color: #A4A4A4;
+    margin-top: 6px;
+    display: block;
+}
+footer a:hover {
+    color: #62A403 !important;
+}
+.sfyn-footer-logo-col img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: auto;
+}
+.sfyn-footer-logo-col p {
+    margin-top: 10px;
+    text-align: center;
+    color: #A4A4A4;
+}
+.sfyn-footer-social a {
+    width: 40px;
+    min-width: 40px;
+    max-width: 40px;
+    height: 40px;
+    background: #4B4B4B;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+.sfyn-footer-social a svg {
+    width: 26px;
+    height: 26px;
+    fill: #A4A4A4;
+}
+.sfyn-footer-social {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 18px;
+}
+.sfyn-footer-social a:hover {
+    background: #62A403;
+}
+.sfyn-footer-social a:hover svg {
+    fill: #171717;
+}
+.sfyn-footer-menu-grid {
+    margin-top: 26px;
+    display: flex;
+    justify-content: space-around;
+}
+.sfyn-footer-menu-grid .sfyn-foo-menu-wrapper ul {
+    list-style: none;
+}
+.sfyn-footer-menu-grid .sfyn-foo-menu-wrapper ul li a {
+    color: #A4A4A4;
+}
+.sfyn-footer-menu-grid .sfyn-foo-menu-wrapper ul li:not(:first-child) {
+    margin-top: 14px;
+}
+.sfyn-main-footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+.sfyn-footer-contact-col {
+    border-right: 1px solid #fff;
+    padding: 30px 12px;
+}
+.sfyn-footer-logo-col {
+    border-right: 1px solid #fff;
+    padding: 30px 12px;
+}
+.sfyn-footer-menu {
+    padding: 30px 12px;
+}
+.sfyn-copy-right p {
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    color: #A4A4A4;
+}
+.sfyn-main-footer {
+    padding-top: 150px;
+}
+.sfyn-footer-subscribe {
+    position: absolute;
+    top: -107px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+#sfyn-footer {
+    position: relative;
+}
+/* footer css end */
+/* contact-us page css start */
+.sfyn-field-wrapper p {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+}
+.sfyn-contact-page-form input, .sfyn-contact-page-form textarea {
+    box-shadow: 0px 3px 7px -2px #656565;
+    margin-top: 30px;
+}
+.sfyn-field-wrapper p .wpcf7-form-control-wrap {
+    width: 100%;
+}
+#sfyn-contact-page .sfyn-custom-container {
+    max-width: 650px;
+}
+/* contact-us page css end */
+/* pages css start */
+header.page-header {
+    display: none;
+}
+#content {
+    /*max-width: 650px;*/
+    margin: 0 auto;
+    padding: 0 15px;
+    margin-top: 40px;
+}
+.page-content ul li {
+    font-size: 18px;
+    font-family: "League Spartan", sans-serif;
+    color: #5E5E5E;
+    line-height: 1.3;
+    list-style: none;
+    margin-top: 12px;
+}
+.page-content ul li:before {
+    content: "";
+    background-image: var(--circle-icon);
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    position: relative;
+    bottom: -2px;
+    margin-right: 10px;
+}
+.page-content strong {
+    color: #232424;
+}
+/* pages css end */
+/* single-product-page css start */
+nav.woocommerce-breadcrumb {
+    margin-top: 10px !important;
+    padding: 0px 15px !IMPORTANT;
+}
+nav.woocommerce-breadcrumb a {
+    color: #000 !important;
+    font-weight: 600;
+}
+nav.woocommerce-breadcrumb {
+    color: #000 !important;
+    font-weight: 500;
+}
+.woocommerce div.product .product_title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    padding-bottom: 14px !important;
+    border-bottom: 1px solid #b5adad;
+}
+.woocommerce-product-details__short-description {
+    margin-top: 20px;
+}
+.woocommerce div.product form.cart {
+    margin-top: 20px;
+}
+.woocommerce-Price-amount.amount, .woocommerce-Price-amount.amount span {
+    color: #000;
+    font-size: 28px;
+}
+.qib-button-wrapper .quantity input.input-text.qty.text {
+    border-radius: 0;
+}
+.woocommerce div.product form.cart {
+    align-items: stretch;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.woocommerce div.product form.cart .button {
+    background: #f6a800;
+    border: 1px solid #f6a800;
+    border-radius: 0;
+    width: 100%;
+    max-width: 360px;
+    color: #000;
+}
+.woocommerce div.product form.cart .button:hover {
+    background: transparent;
+    color: #f6a800;
+}
+.qib-button-wrapper {
+    margin: 0 !important; 
+}
+.yith-wcwl-add-button i.yith-wcwl-icon.fa.fa-heart-o {
+    color: #000;
+    font-size: 24px;
+}
+.yith-wcwl-add-button span {
+    color: #000;
+}
+a.add_to_wishlist.single_add_to_wishlist {
+    display: flex;
+}
+.product_meta {
+    margin-top: 10px;
+}
+.product_meta a {
+    font-weight: 500;
+    font-size: 20px;
+}
+.sfyn-prd-section-content strong {
+    color: #232424;
+}
+.sfyn-prd-choose .sfyn-healthier-benefits img {
+    min-width: 20px;
+}
+.sfyn-prd-choose .sfyn-healthier-benefits {
+    background: #f4f4f4;
+    padding: 12px;
+    border-radius: 8px;
+}
+.sfyn-prd-choose .sfyn-left-benefits .sfyn-healthier-benefits {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: 0 !important;
+}
+.sfyn-prd-choose .sfyn-right-benefits .sfyn-healthier-benefits {
+    width: fit-content;
+    margin-left: 0 !important;
+}
+section.related.products {
+    display: none;
+}
+div#review_form input#submit {
+    background: #f6a800 !important;
+    border: 1px solid #f6a800 !important;
+    border-radius: 0;
+    width: 100%;
+    color: #000 !important;
+    max-width: 200px;
+}
+.woocommerce div.product {
+    padding: 0 15px;
+}
+/* single-product-page css start */
+/* faq page css start */
+.nws-ac-title {
+    font-size: 18px;
+    line-height: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: block;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nws-ac-body {
+    font-size: 16px;
+    line-height: 1.2;
+    padding-top: 18px;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: none;
+}
+.nws-ac-item {
+    padding: 18px 20px;
+    border: 1px solid #E0E0E0;
+    border-radius: 6px;
+}
+.nws-ac-item:not(:first-child) {
+    margin-top: 10px;
+}
+.nws-ac-item.nws-active-ac-item {
+    border: 2px solid #62a403;
+}
+.nws-ac-title:after {
+    content: "";
+    background: var(--arrow-svg);
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    display: block;
+    background-size: 20px;
+    transform: rotate(-90deg);
+    filter: brightness(0);
+    transition: transform 0.3s ease-in-out;
+}
+.nws-ac-item.nws-active-ac-item .nws-ac-title:after {
+    content: "";
+    background: var(--arrow-svg);
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    display: block;
+    background-size: 20px;
+    transform: rotate(0deg);
+    filter: brightness(0);
+}
+.sfyn-faq .sfyn-custom-container {
+    max-width: 650px;
+}
+.sfyn-faq .sfyn-custom-container {
+    max-width: 650px;
+    margin-top: 40px;
+}
+/* faq page css end */
+.woocommerce div.product form.cart {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 10px !important;
+}
+.sfyn-prd-icon-item img {
+    width: 100%;
+    max-width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin: auto;
+}
+.sfyn-prd-icon-item img {
+    width: 100%;
+    height: 120px !important;
+    object-fit: contain;
+    margin: auto;
+}
+div#TrustBadge {
+    background: #f1f3e8;
+    border-radius: 6px;
+    padding: 16px;
+}
+.sfyn-prd-page-icons.sfyn-same-padding {
+    padding-bottom: 0;
+}
+.payment-icons ul.inline-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+p.text-trust_badge.text-small {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 4px;
+}
+.woocommerce div.product form.cart::before {
+   display: none !important;
+}
+.wpcpq-wrap.wpcpq-wrap-106 {
+    display: none;
+}
+span.wpcpq-id.wpcpq-id-106 {
+    display: none;
+}
+.tinv-wraper.woocommerce.tinv-wishlist.tinvwl-after-add-to-cart.tinvwl-woocommerce_after_add_to_cart_button {
+    display: none;
+}
+
+/* my css */
+.sfyn-friendly-badge img {
+    width: 180px !important;
+    height: 180px !important;
+}
+.woocommerce .star-rating span::before {
+    content: "";
+    top: 0;
+    position: absolute;
+    left: 0;
+    display: none !important;
+}
+.woocommerce .star-rating::before {
+    color: #ffa500 !important;
+}
+.wcps-items-rating {
+    display: flex;
+    justify-content: center;
+}
+/*videos tab*/
+.st-videos {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    width: 100%;
+    gap: 10px; 
+    margin-top: 10px;
+    padding: 10px 0px;
+}
+    .st-videos video {
+    flex: 0 0 auto;
+    width: 24%;
+    border-radius: 5px;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 2px 2px;
+}
+    /* For mobile view */
+@media (max-width: 768px) {
+    .st-videos {
+        scroll-snap-type: x mandatory;
+        overflow-x: scroll;
+    }
+    .st-videos video {
+        scroll-snap-align: start;
+        width: 50vw; 
+        border-radius: 5px;
+        max-width: none;
+        box-shadow: rgba(0, 0, 0, 0.2) 1px 2px 2px;
+        height: auto;
+    }
+    .st-videos {
+        display: flex;
+        gap: 10px; 
+        padding: 10px 0px;
+        margin-top: 10px;
+    }
+}
+.st-videos::-webkit-scrollbar {
+    display: none; 
+}
+
+/*my cats*/
+.mycats {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.cat-item {
+    position: relative;
+    width: 30%;
+    height: 350px;
+    border-radius: 10px;
+    margin: 0px 10px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cat-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cat-overlay a {
+    text-decoration: none;
+}
+
+.cat-overlay a h2 {
+    color: white;
+    margin: 0;
+    font-size: 2em;
+}
+
+.cat-overlay a h2:hover {
+    color: #ff33e6;
+    margin: 0;
+    font-size: 2em;
+}
+
+@media (max-width: 768px) {
+    .mycats {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .cat-item {
+        position: relative;
+        width: 100%;
+        height: 350px;
+        border-radius: 10px;
+        margin: 10px 0px;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .cat-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .cat-overlay a {
+        text-decoration: none;
+    }
+    
+    .cat-overlay a h2 {
+        color: white;
+        margin: 0;
+        font-size: 2em;
+    }
+    
+    .cat-overlay a h2:hover {
+        color: #ff33e6;
+        margin: 0;
+        font-size: 2em;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .woocommerce div.product div.images.woocommerce-product-gallery ol {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-top: 16px !important;
+    }
+    .woocommerce div.product div.images.woocommerce-product-gallery ol li {
+        width: 100% !important;
+    }
+}
+@media screen and (max-width: 1080px) {
+    .slick-next.slick-arrow {
+        right: 0px;
+    }
+    .slick-prev.slick-arrow {
+        left: 0;
+    }
+    .sfyn-main-header-grid.sfyn-mob-header {
+        display: flex;
+    }
+    .sfyn-main-header-grid.sfyn-desktop-header {
+        display: none;
+    }
+    .sfyn-logo-col img {
+        max-width: 65px !important;
+        margin: auto;
+    }
+    main#main {
+        max-width: 1250px;
+    }
+    .sfyn-organic-gems.sfyn-change-bg img {
+        width: 100%;
+    }
+    .sfyn-main-header-grid.sfyn-mob-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sfyn-header-menu-col {
+        width: 30%;
+    }
+    .sfyn-logo-col {
+        width: 30%;
+    }
+    .sfyn-header-icon {
+        width: 30%;
+    }
+}
+@media screen and (max-width: 991px) {
+    .sfyn-gird-4fr {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .sfyn-grid-2fr {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .sfyn-mt-24px {
+        margin-top: 12px;
+    }
+    .sfyn-flex-2fr {
+        flex-wrap: wrap;
+    }
+    .sfyn-gems-media-col, .sfyn-gems-content-col {
+        width: 100%;
+    }
+    .sfyn-deal-ingo-block {
+        padding: 6px;
+    }
+    .sfyn-frienly-store .sfyn-flex-2fr {
+        flex-wrap: nowrap;
+    }
+    .sfyn-subscribe-content-inner h2 {
+        font-size: 26px;
+    }
+    .sfyn-subscribe-content-inner {
+        padding: 30px 20px;
+    }
+    .sfyn-footer-form {
+        padding: 32px 60px 8px;
+    }
+    .sfyn-nav-header .sfyn-grid-2fr {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 767px) {
+    h2 {
+        font-size: 36px;
+    }
+    .sfyn-custom-container {
+        padding: 0 30px;
+    }
+    .sfyn-grid-3fr {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .sfyn-main-footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .sfyn-footer-logo-col {
+        border-right: 0px solid #fff;
+    }
+    .sfyn-choose-organic .sfyn-grid-3fr {
+        grid-template-columns: 1fr;
+    }
+    .sfyn-left-benefits .sfyn-healthier-benefits {
+        flex-direction: row;
+    }
+    .sfyn-right-benefits .sfyn-healthier-benefits:last-child {
+        margin-left: 0;
+    }
+    .sfyn-dotw-grid {
+        grid-template-columns: 1fr;
+    }
+    .sfyn-deal-ingo-block {
+        padding: 14px;
+    }
+    .wpte-product-layout-wrapper-2 .wpte-product-row .wpte-product-column .wpte-general-layout-row:last-child {
+        grid-column: span 2;
+    }
+    .sfyn-nav-header .sfyn-grid-2fr {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    div#tab-reviews .sfyn-custom-container {
+        padding: 0;
+    }
+    .woocommerce div.product form.cart {
+        justify-content: center;
+        gap: 7px;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 600px) {
+    .sfyn-desk-banner {
+        display: none !important;
+    }
+    .sfyn-mob-banner {
+        display: block !important;
+    }
+    .sfyn-gap-20px {
+        gap: 14px;
+    }
+    .sfyn-icon-img {
+        max-width: 65px;
+        min-width: 65px;
+        height: 65px;
+    }
+    .sfyn-icon-with-text-box {
+        height: 70px;
+    }
+    .sfyn-hero-slider.sfyn-mob-banner {
+        margin-bottom: 0 !important;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    .sfyn-badge-img-wrapper {
+        max-width: 160px;
+        min-width: 160px;
+    }
+    .sfyn-frienly-store .sfyn-flex-2fr {
+        flex-wrap: wrap;
+    }
+    .sfyn-frienly-store .sfyn-content-col, .sfyn-frienly-store .sfyn-media-col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .sfyn-main-footer-grid {
+        grid-template-columns: 1fr;
+    }
+    .sfyn-footer-contact-col {
+        border-right: 0px solid #fff;
+        border-bottom: 1px solid #fff;
+        padding: 14px 12px;
+    }
+    .sfyn-footer-logo-col {
+        border-right: 0px solid #fff;
+        border-bottom: 1px solid #fff;
+        padding: 14px 12px;
+    }
+    .sfyn-subscribe-grid {
+        grid-template-columns: 1fr;
+    }
+    .sfyn-nav-header {
+        padding: 6px 0;
+    }
+    .sfyn-subscribe-content-inner h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+    .sfyn-footer-form {
+        padding: 20px 50px 8px;
+    }
+    .sfyn-subscribe-content {
+        border-radius: 12px 12px 0 0;
+    }
+
+    .sfyn-footer-subscribe {
+        top: -150px;
+    }
+    .sfn-footer-inner {
+        margin-top: 195px;
+    }
+    .sfyn-main-footer-grid {
+        border-top: 0px solid #fff;
+    }
+    .sfyn-footer-menu {
+        padding: 14px 12px;
+    }
+    .sfyn-copy-right p {
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+        color: #A4A4A4;
+    }
+    .sfyn-dotw-prd .wpte-product-load .wpte-product-column {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .sfyn-prd-layout .wpte-product-load .wpte-product-column {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .sfyn-trust-badges .sfyn-grid-3fr .sfyn-badge-item:last-child {
+        /*grid-column: span 2;*/
+    }
+    .sfyn-dotw-prd .wpte-product-load .wpte-product-column .wpte-general-layout-row:nth-child(3) {
+        grid-column: span 2;
+    }
+    .sfyn-field-wrapper p {
+        display: block;
+    }
+    .sfyn-contact-page-form input, .sfyn-contact-page-form textarea {
+        margin-top: 20px;
+    }
+    .page-content ul li {
+        margin-top: 8px;
+    }
+    .page-content ul li:before {
+        bottom: -4px;
+        margin-right: 6px;
+    }
+    .sfyn-nav-info-wrapper {
+        justify-content: center;
+    }
+    .sfyn-nav-menu .menu-navigation-menu-container {
+        /*margin-top: 8px;*/
+        justify-content: center;
+    }
+    .sfyn-nav-info-wrapper li:not(:first-child):before {
+        margin: 0 10px;
+    }
+    .sfyn-nav-menu li:not(:first-child):before {
+        margin: 0 10px;
+    }
+    aside {
+        max-width: 290px;
+    }
+    .sfyn-logo-col img {
+        max-width: 64px !important;
+    }
+    .sfyn-header-icon-wrapper {
+        gap: 6px;
+    }
+    .woocommerce div.product .product_title {
+        font-size: 24px;
+        margin-bottom: 14px;
+        padding-bottom: 8px !important;
+    }
+    
+    .sfyn-main-header-grid.sfyn-mob-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sfyn-header-menu-col {
+        width: 30%;
+    }
+    .sfyn-logo-col {
+        width: 30%;
+    }
+    .sfyn-header-icon {
+        width: 30%;
+    }
+    .sfyn-grid-4fr {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+    .sfyn-friendly-badge img {
+        width: 120px !important;
+        height: 120px !important;
+    }
+    .sfyn-left-benefits .sfyn-icon-content h3 {
+        text-align: left;
+    }
+}
+@media screen and (max-width: 500px) {
+    #menu-item-683 {
+        display: none;
+    }
+    #menu-item-238 {
+        display: none;
+    }
+    .sfyn-nav-info-wrapper {
+        flex-wrap: wrap;
+    }
+    .sfyn-nav-header .sfyn-grid-2fr {
+        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sfyn-nav-info-wrapper span {
+        display: none;
+    }
+    .sfyn-nav-menu li:not(:first-child):before {
+        margin: 0 10px;
+        display: none;
+    }
+    .sfyn-main-header-grid.sfyn-mob-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sfyn-header-menu-col {
+        width: 30%;
+    }
+    .sfyn-logo-col {
+        width: 30%;
+    }
+    .sfyn-header-icon {
+        width: 30%;
+    }
+    /*as seen on*/
+    .as-seen-on {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .as-seen-on h3 {
+        text-align: center;
+        font-size: 45px;
+        font-weight: 600;
+        color: #232424;
+        font-family: "League Spartan", sans-serif;
+    }
+    .aso-child {
+        width: 90%;
+        padding: 0px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .aso-left {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .aso-left h2 {
+        font-size: 35px;
+        font-weight: 600;
+        color: #ff33e6;
+        text-align: center;
+        font-family: "League Spartan", sans-serif;
+        line-height: 1.2;
+        margin: 10px 0px;
+    }
+    .aso-left p {
+        font-size: 16px;
+        font-weight: 400;
+        color: #232424;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        line-height: 1.5;
+    }
+    .aso-right{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .aso-right-child {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .aso-right-child img {
+        width: 50px;
+        height: 50px;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 375px) {
+    h3 {
+        font-size: 14px;
+    }
+    .sfyn-gap-20px {
+        gap: 8px;
+    }
+    .sfyn-gird-4fr {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    h2 {
+        font-size: 28px;
+    }
+    .sfyn-prd-cards .wpte-general-layout-row .wpte-general-layout-title-area h2.wpte-general-layout-product-title a {
+        font-size: 14px !important;
+    }
+    .sfyn-prd-cards .wpte-general-layout-row .wpte-general-layout-title-area h2.wpte-general-layout-product-title {
+        line-height: normal;
+    }
+    .sfyn-badge-img-wrapper {
+        max-width: 120px;
+        min-width: 120px;
+    }
+    #menu-item-683 {
+        display: none;
+    }
+    #menu-item-238 {
+        display: none;
+    }
+    .sfyn-main-footer {
+        padding-top: 165px;
+    }
+    .sfyn-copy-right p {
+        font-size: 12px;
+    }
+    .sfyn-nav-info-wrapper {
+        flex-wrap: wrap;
+    }
+    .sfyn-nav-info-wrapper li:not(:first-child):before {
+        display: none;
+    }
+    .sfyn-nav-header {
+        padding: 6px 0;
+    }
+    aside {
+        max-width: 250px;
+    }
+    .sfyn-nav-info-wrapper span {
+        display: none;
+    }
+    .sfyn-nav-info-wrapper li:first-child ~ li::before {
+        content: "";
+        height: 13px;
+        width: 1px;
+        display: inline-block; /* Changed to inline-block for inline behavior */
+        background: #fff;
+        margin: 0 14px;
+    }
+    .sfyn-nav-header .sfyn-grid-2fr {
+        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sfyn-main-header-grid.sfyn-mob-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sfyn-header-menu-col {
+        width: 30%;
+    }
+    .sfyn-logo-col {
+        width: 30%;
+    }
+    .sfyn-header-icon {
+        width: 30%;
+    }
+    /*.sfyn-friendly-slider {*/
+    /*    width: 180px !important;*/
+    /*    height: 180px !important;*/
+    /*}*/
+    .sfyn-b-slider {
+        margin-top: 50px;
+    }
+    .sfyn-nav-menu li:not(:first-child):before {
+        margin: 0 10px;
+        display: none;
+    }
+    .sfyn-friendly-badge img {
+        width: 100px !important;
+        height: 100px !important;
+    }
+    .sfyn-prd-layout .wpte-product-load .wpte-product-column {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Custom CSS for image display adjustment */
+@media (min-width: 768px) {
+  .carousel-item img.d-none.d-md-block {
+    display: block;
+  }
+  .carousel-item img.d-md-none {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .carousel-item img.d-md-none {
+    display: block;
+  }
+  .carousel-item img.d-none.d-md-block {
+    display: none;
+  }
+}
+
+/* Style for the announcement bar */
+.announcement-bar {
+    background-color: #f6a800;
+    text-align: center;
+    padding: 7px 0px; 
+    position: fixed;
+    width: 100%;
+    top: 0; 
+    z-index: 1000; 
+}
+
+/* Blinking effect for the text */
+.blinking-text {
+    font-size: 20px;
+    font-family: 'Sofia';
+    font-weight: 600 !important;
+    color: white !important;
+    animation: blink 1.5s infinite step-start; /* Animation for blinking */
+}
+
+.blinking-text strong {
+    font-size: 20px;
+    font-family: 'Sofia';
+    font-weight: 600 !important;
+    color: white !important;
+    animation: blink 1.5s infinite step-start; /* Animation for blinking */
+}
+
+/* Keyframes for blinking effect */
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
